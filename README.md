@@ -288,23 +288,27 @@ Please open an issue, submit a pull request, or request a walkthrough.
 
 sequenceDiagram
     participant E as Exporter
-    participant P as AgriQCert
+    participant P as AgriQCert Platform
     participant AI as AI Engine
     participant QA as QA Agency
-    participant VC as Inji Certify
+    participant C as Inji Certify
+    participant W as Inji Wallet
     participant V as Inji Verify
     participant B as Blockchain
 
-    E->>P: Submit batch + documents
-    P->>AI: Extract data
-    AI-->>P: Structured fields
+    E->>P: Submit batch data + documents
+    P->>AI: Extract structured data
+    AI-->>P: Parsed fields & flags
+
     P->>QA: Inspection request
-    QA-->>P: Inspection result
-    P->>VC: Issue VC
-    VC-->>E: VC in wallet (QR)
+    QA-->>P: Inspection results
+
+    P->>C: Issue Digital Product Passport (VC)
+    C-->>W: Signed VC delivered (QR)
+
     E->>V: QR scanned
-    V->>B: Verify anchor
-    B-->>V: Valid
-    V-->>E: Trusted verification
+    V->>B: Verify credential anchor
+    B-->>V: Valid & untampered
+    V-->>E: Trusted verification result
 
 

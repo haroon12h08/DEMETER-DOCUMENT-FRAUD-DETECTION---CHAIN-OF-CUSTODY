@@ -284,3 +284,27 @@ DEMETER demonstrates how Verifiable Credentials can modernize agricultural trade
 
 Contributions, integrations, and demonstration requests are welcome.
 Please open an issue, submit a pull request, or request a walkthrough.
+
+
+sequenceDiagram
+    participant E as Exporter
+    participant P as AgriQCert
+    participant AI as AI Engine
+    participant QA as QA Agency
+    participant VC as Inji Certify
+    participant V as Inji Verify
+    participant B as Blockchain
+
+    E->>P: Submit batch + documents
+    P->>AI: Extract data
+    AI-->>P: Structured fields
+    P->>QA: Inspection request
+    QA-->>P: Inspection result
+    P->>VC: Issue VC
+    VC-->>E: VC in wallet (QR)
+    E->>V: QR scanned
+    V->>B: Verify anchor
+    B-->>V: Valid
+    V-->>E: Trusted verification
+
+

@@ -1,20 +1,20 @@
-#  AgriQCert
+#  DEMETER
 **Verifiable Quality Certification for Agricultural Trade**
 
-AgriQCert is a high-complexity, web-based platform that digitizes and secures agricultural export and import certification using **Verifiable Credentials (VCs)**. It replaces fragmented, paper-heavy compliance workflows with a **tamper-proof, AI-assisted, blockchain-backed system** aligned with **W3C Verifiable Credentials** and **OpenID4VP** standards.
+DEMETER is a high-complexity, web-based platform that digitizes and secures agricultural export and import certification using **Verifiable Credentials (VCs)**. It replaces fragmented, paper-heavy compliance workflows with a **tamper-proof, AI-assisted, blockchain-backed system** aligned with **W3C Verifiable Credentials** and **OpenID4VP** standards.
 
 The platform enables farmers, QA agencies, DPP issuers, exporters, importers, and consumers to **issue, carry, and verify trusted quality certificates** (Digital Product Passports) using **DID-based identities** and **QR-based instant verification**.
 
 ---
 
-##  Why AgriQCert Exists
+##  Why DEMETER exists
 Agricultural trade suffers from:
 - Manual document verification (slow, error-prone)
 - Fraud via forged lab reports and certificates
 - Illegible scans, PDFs, and inconsistent formats
 - Lack of real-time trust for importers and customs
 
-**AgriQCert solves this by design.**  
+**DEMETER solves this by design.**  
 It ensures that **what is verified is exactly what was issued**, cryptographically and transparently.
 
 ---
